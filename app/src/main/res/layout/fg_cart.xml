@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--未登录-->
+    <RelativeLayout
+        android:id="@+id/cart_unlogin"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="去登录" />
+
+    </RelativeLayout>
+<!--登录后无内容-->
+    <RelativeLayout
+        android:id="@+id/cart_missing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="您的购物车还没有添加任何商品"
+            android:textColor="#333"
+            android:textSize="45dp" />
+
+        <Button
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="买买买" />
+
+    </RelativeLayout>
+    <!--登录后有内容-->
+    <RelativeLayout
+        android:id="@+id/cart_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cart有内容" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

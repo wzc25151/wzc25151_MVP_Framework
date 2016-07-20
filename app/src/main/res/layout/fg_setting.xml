@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/setting_person_btn"
+        android:layout_width="match_parent"
+        android:text="个人资料"
+        android:layout_height="match_parent" />
+    <Button
+        android:id="@+id/setting_reset_password_btn"
+        android:layout_width="match_parent"
+        android:text="修改密码"
+        android:layout_height="match_parent" />
+    <Button
+        android:id="@+id/setting_help_btn"
+        android:layout_width="match_parent"
+        android:text="帮助"
+        android:layout_height="match_parent" />
+    <Button
+        android:id="@+id/setting_about_btn"
+        android:layout_width="match_parent"
+        android:text="关于软件"
+        android:layout_height="match_parent" />
+    <Button
+        android:id="@+id/setting_logout_btn"
+        android:layout_width="match_parent"
+        android:text="退出当前账户"
+        android:layout_height="match_parent" />
+</LinearLayout>

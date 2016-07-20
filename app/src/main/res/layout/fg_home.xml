@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:indicator="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.sousouhardware.widget.AutoScrollViewPager
+                android:id="@+id/home_banner_vp"
+                android:layout_width="match_parent"
+                android:layout_height="180dp" />
+
+            <RelativeLayout
+                android:id="@+id/home_banner_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:background="#3333"
+                android:orientation="horizontal" />
+
+        </RelativeLayout>
+
+        <com.sousouhardware.widget.NoScrollGridView
+            android:id="@+id/home_gv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnWidth="60dp"
+            android:horizontalSpacing="0dp"
+            android:numColumns="4"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="0dp" />
+
+        <ListView
+            android:id="@+id/home_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>
